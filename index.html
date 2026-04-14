@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de mercado de trabalho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button id="theme-toggle" title="Alternar Modo Escuro">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="resume-wrapper">
+        <nav class="sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2>Gabriel Henrique Cabral</h2>
+                <span>Full Stack Developer</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experiência</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Educação</a></li>
+            </ul>
+
+            <div class="contact-card">
+                <a href="mailto:seuemail@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <section id="about" class="section card">
+                <h2 class="section-title">Resumo Profissional</h2>
+                <p>Especialista em transformar problemas complexos em interfaces simples e elegantes. Com foco em performance e escalabilidade, busco sempre as melhores práticas do mercado.</p>
+                <div class="stats">
+                    <div class="stat-item"><strong>+5</strong> Anos Exp.</div>
+                    <div class="stat-item"><strong>+20</strong> Projetos</div>
+                    <div class="stat-item"><strong>12</strong> Clientes</div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2 class="section-title">Experiência Profissional</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">2026 - Atual</div>
+                        <div class="desc">
+                            <h3>Senior Developer - Tech Giant</h3>
+                            <p>Liderança técnica de squads, arquitetura de microserviços e mentoria de novos desenvolvedores.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">2020 - 2026</div>
+                        <div class="desc">
+                            <h3>Full Stack Jr - Startup Inc</h3>
+                            <p>Desenvolvimento ágil com foco em React e Node.js para plataformas de e-learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section card">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skill-grid">
+                    <div class="skill-box">
+                        <span>JavaScript</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-box">
+                        <span>React / Next.js</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-box">
+                        <span>Node.js</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-box">
+                        <span>UI/UX Design</span>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">🚀</div>
+                        <h4>Sistema de Gestão</h4>
+                        <p>Dashboard administrativo completo com gráficos em tempo real.</p>
+                        <a href="#" class="btn-sm">Ver Site</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">📱</div>
+                        <h4>App de Delivery</h4>
+                        <p>Interface mobile-first focada na conversão de vendas.</p>
+                        <a href="#" class="btn-sm">Ver Código</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        btn.onclick = () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = btn.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        };
+    </script>
+</body>
+</html>
